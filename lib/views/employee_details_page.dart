@@ -118,6 +118,7 @@ class _EmployeeDetailsPageState extends State<EmployeeDetailsPage> {
                           ),
                         ],
                       ),
+                      SizedBox(height: 10,),
                       Row(
                         children: [
                           Text(

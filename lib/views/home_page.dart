@@ -14,7 +14,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final shoppingController = Get.put(AllDataController());
-  var ns = TextEditingController();
+  var search = TextEditingController();
   String searchValue = "";
 
   @override
@@ -40,10 +40,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 child: TextFormField(
-                    controller: ns,
+                    controller: search,
                     onChanged: (data) {
                       setState(() {
-                        searchValue = ns.text;
+                        searchValue = search.text;
                       });
                     },
                     decoration: InputDecoration(
